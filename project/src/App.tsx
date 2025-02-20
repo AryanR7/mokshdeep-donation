@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 import { Flame } from 'lucide-react';
@@ -17,11 +17,22 @@ function HomePage() {
         
         {/* Image Section with Overlay */}
         <div className="relative w-full h-[550px] rounded-lg overflow-hidden">
-          <img 
-            src="/src/Images/Haridwar.webp" 
+          {/* <img 
+            src="/src/Images/Haridwarv.mp4" 
             alt="Haridwar Ghat" 
             className="w-full h-full object-cover opacity-90"
-          />
+          />  */}
+          <video 
+  src="/src/Images/Haridwarv.mp4"
+  className="w-full h-full object-cover opacity-90"
+  autoPlay
+  loop
+  muted
+  playsInline
+>
+  Your browser does not support the video tag.
+</video>
+
 
           {/* Overlay for better readability */}
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 bg-black bg-opacity-50 rounded-lg">
