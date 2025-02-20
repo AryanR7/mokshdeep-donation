@@ -266,7 +266,7 @@ export function DiyaForm() {
         onClick={handlePaymentDone} 
         className="px-6 py-2 bg-green-600 text-white font-medium rounded-md hover:bg-green-700"
       >
-        Payment Done!
+        Payment Done
       </button>
       <button 
         onClick={handleCancel} 
